@@ -103,10 +103,10 @@
       <span>Cập nhật lúc: <strong id="datetime">--:--:--</strong></span>
     </div>
     <div class="middle-widget">
-      <iframe src="https://www.tradingview-widget.com/embed-widget/single-quote/?locale=vi_VN#%7B%22symbol%22%3A%22PEPPERSTONE%3AXAUUSD%22%2C%22width%22%3A300%2C%22height%22%3A126%2C%22isTransparent%22%3Atrue%2C%22colorTheme%22%3A%22light%22%2C%22utm_source%22%3A%22sjc.com.vn%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22single-quote%22%2C%22page-uri%22%3A%22sjc.com.vn%2Fgia-vang-online%3Fgidzl%3DMJkg3KJxOoPS9we8G-5c9baWfmjSvcicG72W2bcoRof38Qy72-fWVHSh-G1Uxp1y4Iof0p0hylWPGFvd90%22%7D" width="300" height="126" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+      <iframe src="https://www.tradingview-widget.com/embed-widget/single-quote/?locale=vi_VN#%7B%22symbol%22%3A%22PEPPERSTONE%3AXAUUSD%22%2C%22width%22%3A300%2C%22height%22%3A126%2C%22isTransparent%22%3Atrue%2C%22colorTheme%22%3A%22light%22%7D" width="300" height="126" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
     </div>
     <div class="right-map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="180" height="90" style="border:0;" allowfullscreen loading="lazy"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.644577499349!2d106.33093907599677!3d20.926614491277693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31359b3ab14a7e07%3A0x5025a3b290c0326b!2zMjgyIFRoYW5oIE5pw6puLCBQLiBI4bqjaSBUw6JuLCBI4bqjaSBExrDGoW5nLCAwMzAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2sus!4v1746269002692!5m2!1svi!2sus" width="180" height="90" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <strong style="margin-top: 4px; font-size: 14px; white-space: nowrap;">📍 282 Đường Thanh Niên, TP Hải Dương</strong>
     </div>
   </div>
@@ -179,6 +179,11 @@
       }
     }
     fetchPriceTable();
+
+    // Tự động reload lại trang mỗi 5 phút
+    setTimeout(() => {
+      location.reload();
+    }, 300000);
   </script>
 </body>
 </html>
